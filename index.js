@@ -40,6 +40,8 @@ app.use(employerRoutes);
 app.use(employeeRoutes);
 app.use(jobsRoutes);
 
-app.listen("3000", function(){
+
+const port = process.env.PORT || 3000;
+app.listen(port, function(){
     console.log("Started");
 });
