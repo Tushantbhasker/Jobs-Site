@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Job Site</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"> 
+        <!-- <link rel="stylesheet" href="/CSS/apk.css"> -->
+
+    </head>
+    <body>
+        <h1> All Candidates</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% employees.forEach(function(employee){ %>
+                    <tr>
+                        <td>  <%= employee.username %> </td>
+                    </tr>
+                <% }) %>
+            </tbody>
+
+        </table>
+        <a class="btn btn-primary" href="/loginEmployer">Logout</a>
+            
+    </body>
+</html>
+
+<!-- <h1>All candidates</h1>
+<div>
+    <% employees.forEach(function(employee){ %>
+        <p>
+            <%= employee.username %>
+        </p>
+    <% }) %>
+</div> -->

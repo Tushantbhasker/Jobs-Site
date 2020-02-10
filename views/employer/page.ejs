@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Job Site</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"> 
+        <!-- <link rel="stylesheet" href="/CSS/apk.css"> -->
+
+    </head>
+    <body>
+        <h1> ALL POSTED JOBS</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>DESC</th>
+                    <th>Candidates Applied</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% employer.jobs.forEach(function(job){ %>
+                    <tr>
+                        <td> <%= job.title %> </td>
+                        <td> <%= job.desc %> </td>
+                        <td><a class="btn btn-primary" href="/employer/job/<%=job._id%>"> All candidates</a></td>
+                    </tr>
+                <% }) %>
+            </tbody>
+
+        </table>
+        <a class="btn btn-primary" href="/employer/<%= employer._id%>/jobs/new">Add a new job</a> 
+        <a class="btn btn-primary" href="/loginEmployer">Logout</a>
+            
+    </body>
+</html>
+<!-- <h1> employer</h1>
+<div>
+    <% employer.jobs.forEach(function(job){ %>
+        <div>
+            <%= job.title %>
+        </div>
+        <dv>
+            <%= job.desc %>
+        </div>
+        <div>
+            <a href="/employer/job/<%=job._id%>"> All candidates</a>
+        </div>
+    <% }) %>
+</div>
+
+<a href="/employer/<%= employer._id%>/jobs/new">Add a new job</a> 
+<a href="/loginEmployer">Logout</a> -->
+
+
+
+

@@ -1,0 +1,39 @@
+body, html {
+    height: 100%;
+  }
+.bg {
+  background-image: url("pic.jpg");
+
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+p{
+  padding-top: 10%;
+  padding-left: 40%;
+  font-size: 50px;  
+}
+/* .btn{
+  margin-top:-50%;
+  margin-left: 23%;
+  width: 200;
+} */
+form{
+  padding-left: 35%;
+  padding-top: 2%;
+}
+h1{
+  padding-left: 33%;
+  padding-top: 2%;
+}
+input{
+  width: 30%;
+}
+.width{
+  width: 30%;
+}
+.new{
+  margin-left: 35%;
+  width: 19%; 
+}
